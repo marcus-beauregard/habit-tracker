@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
+import { streakLabel } from './streak.js';
 
 const seed = [
   { id: '1', name: 'Read 20 pages', days: 12 },
@@ -24,7 +25,7 @@ export default function App() {
           <View style={s.row}>
             <View>
               <Text style={s.name}>{item.name}</Text>
-              <Text style={s.streak}>{item.days} day streak</Text>
+              <Text style={s.streak}>{streakLabel(item.days)}</Text>
             </View>
             <TouchableOpacity style={s.check} onPress={() => check(item.id)}>
               <Text style={s.checkText}>+1</Text>
