@@ -19,7 +19,7 @@ npm install
 
 ## Tests
 
-There is no test harness yet — #5 tracks it, and a PR that lands the first test is a genuinely good contribution. Until then, run **npm install** and paste what you saw into the PR.
+`npm test` runs `node --test` and covers `streak.js` (2 tests today). Component and rendering tests are still missing, tracked by #5. A PR that adds a test for new behaviour is expected, not a novelty. Paste what you saw from `npm test` into the PR.
 
 ## Commit style
 

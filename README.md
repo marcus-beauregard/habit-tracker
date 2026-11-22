@@ -27,7 +27,7 @@ A ```FlatList``` of habits. Each row shows the habit and its streak; the **+1** 
 
 ## Develop
 
-There is no test runner yet — that is #5, and it is the issue that makes everything after it easier. Until then, say in your PR how you checked the change on a device.
+Run `npm test` to check the streak logic. It runs `node --test` and covers `streak.js` (2 tests today). Component and rendering tests are still missing, tracked by #5. Say in your PR how you checked the change, on a device if it touches the UI.
 
 ## Known gaps
 
